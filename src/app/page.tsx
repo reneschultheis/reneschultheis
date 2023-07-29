@@ -10,31 +10,8 @@ export default async function Home() {
   console.log(resultList);
 
   return (
-    <div className="bg-orange-50">
-      <Image src="../../public/patterns/pattern.svg" height={100} width={100} alt={''} />
+    <div>
       <div className="h-screen grid content-between">
-        <div className='p-8 flex flex-row justify-between'>
-          <p>René Schultheis</p>
-          <nav>
-            <ul className='flex flex-row space-x-8'>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/projects/dasschaltwerk">Projects</a>
-              </li>
-              <li>
-                <a href="/interests">Interests</a>
-              </li>
-              <li>
-                <a href="/agfa-photo">Agfa Photo</a>
-              </li>
-              <li>
-                <a href="https://vienna-sausage-guide.vercel.app">Vienna Sausage Guide</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
         <div className='p-8 flex flex-grow justify-between'>
           <div className='flex flex-grow flex-1'>
             <div className='my-auto'>
@@ -68,27 +45,6 @@ export default async function Home() {
           <a href="/agfa-photo">
             <Image src="/svg/linkedin.svg" height={24} width={24} alt={''} />
           </a>
-        </div>
-      </div>
-      <div className="h-screen grid content-center">
-        <div className='p-8 flex flex-row justify-between'>
-          <p>René Schultheis</p>
-          <nav>
-            <ul className='flex flex-row space-x-8'>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/projects/dasschaltwerk">Projects</a>
-              </li>
-              <li>
-                <a href="/interests">Interests</a>
-              </li>
-              <li>
-                <a href="/agfa-photo">Agfa Photo</a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </div >

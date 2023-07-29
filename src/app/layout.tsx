@@ -1,7 +1,36 @@
+import Header from './components/Header'
 import './globals.css'
-import { Rubik } from 'next/font/google'
-
-const rubik = Rubik({ subsets: ['latin'] })
+import localFont from 'next/font/local'
+ 
+const subjectivity = localFont({
+  src: [
+    {
+      path: './font/Subjectivity-Thin.woff2',
+      weight: '100',
+      style: 'thin',
+    },
+    {
+      path: './font/Subjectivity-Light.woff2',
+      weight: '200',
+      style: 'light',
+    },
+    {
+      path: './font/Subjectivity-Regular.woff2',
+      weight: '300',
+      style: 'regular',
+    },
+    {
+      path: './font/Subjectivity-Medium.woff2',
+      weight: '400',
+      style: 'medium',
+    },
+    {
+      path: './font/Subjectivity-ExtraBold.woff2',
+      weight: '700',
+      style: 'extrabold',
+    },
+  ],
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +44,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={subjectivity.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
